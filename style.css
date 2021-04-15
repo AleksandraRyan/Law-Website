@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header, Index Page */
+
+header.hero {
+  background: url('https://blog.ipleaders.in/wp-content/uploads/2019/10/Administrative-Law.jpg')
+    no-repeat center/cover;
+  height: 100vh;
+  max-width: 100%;
+  color: rgb(5, 29, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header.hero h1 {
+  font-size: 23px;
+  padding: 0px 15px;
+  line-height: 1.5;
+}
+
+.navbar-brand {
+  font-size: 35px;
+  margin-left: 10px;
+}
+
+/* About Page */
+
+header.about-intro {
+  background: url('https://s35691.pcdn.co/wp-content/uploads/2020/03/good-questions-for-better-essay-prompts.jpg')
+    no-repeat center center/cover;
+  height: 40vh;
+}
+
+header.about-intro h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 130px;
+  font-size: 45px;
+}
+
+#areas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+#areas .flex-items {
+  flex-basis: 25%;
+  background: aliceblue;
+  text-align: center;
+  padding: 25px;
+  color: #234b85;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+}
+
+#areas .flex-items:hover {
+  cursor: pointer;
+  background: #234c85;
+  color: #fff;
+}
