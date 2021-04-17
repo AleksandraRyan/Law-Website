@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
-body {
-  font-family: 'Poppins', sans-serif;
+:root {
+  --primary-font: 'Poppins', sans-serif;
+  --secondary-font: 'Lato', sans-serif;
 }
-
 /* Header, Index Page */
+
+nav.navbar {
+  font-family: var(--primary-font);
+  font-weight: 500;
+}
 
 header.hero {
   background: url('https://blog.ipleaders.in/wp-content/uploads/2019/10/Administrative-Law.jpg')
@@ -46,6 +51,10 @@ header.about-intro h2 {
   font-size: 45px;
 }
 
+.about-section p {
+  font-family: var(--primary-font);
+}
+
 #areas {
   display: flex;
   flex-wrap: wrap;
@@ -64,11 +73,50 @@ header.about-intro h2 {
   font-size: 18px;
   transition: all 0.5s ease;
   font-weight: 700;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--secondary-font);
 }
 
 #areas .flex-items:hover {
   cursor: pointer;
   background: #234c85;
   color: #fff;
+}
+
+.contact-area h2 {
+  color: #194a85;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+strong {
+  font-weight: bold;
+  font-weight: 700;
+}
+
+.contact-area .btn {
+  background: #194a85;
+  color: #fff;
+  font-weight: bold;
+  padding: 0px 16px;
+  line-height: 46px;
+  border-radius: 0;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+}
+
+.contact-area .btn:hover {
+  background: #8ca8c9;
+}
+
+/* Contact */
+
+.address {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-weight: bold;
 }
