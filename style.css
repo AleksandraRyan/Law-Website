@@ -120,3 +120,83 @@ strong {
 h4 {
   font-weight: bold;
 }
+
+@media (max-width: 978px) {
+  iframe {
+    display: none;
+  }
+
+  header.hero {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  header.hero h1 {
+    color: #000;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 12em;
+  }
+
+  button.navbar-toggler {
+    margin-right: 10px;
+  }
+
+  a.nav-link {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  header.hero {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  header.hero h1 {
+    color: #000;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 8em;
+  }
+
+  .about-section p {
+    margin-top: 2rem !important;
+  }
+
+  #areas {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(2rem, 1fr));
+    gap: 15px;
+  }
+
+  .contact-area h2 {
+    font-size: 30px;
+    margin-bottom: 2rem !important;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  iframe {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  header.about-intro h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 40px;
+  }
+
+  header.hero h1 {
+    color: #000;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 5em;
+  }
+}
